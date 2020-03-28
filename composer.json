@@ -1,5 +1,5 @@
 {
-    "name": "pili-engineering/pili-sdk-php.v2",
+    "name": "vin7ent/pili-sdk-php.v2",
     "type": "library",
     "description": "Pili Streaming Cloud Server-Side Library For PHP.",
     "keywords": ["web-service", "rtmp", "hls", "flv", "hdl", "hds", "dash", "streaming", "pili", "qiniu", "cloud"],
