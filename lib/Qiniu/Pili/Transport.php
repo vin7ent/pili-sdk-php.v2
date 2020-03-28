@@ -1,8 +1,8 @@
 <?php
-namespace Vin7ent\Pili;
+namespace Qiniu\Pili;
 
-use \Vin7ent\Pili\Utils;
-use \Vin7ent\Pili\HttpRequest;
+use \Qiniu\Pili\Utils;
+use \Qiniu\Pili\HttpRequest;
 
 final class Transport
 {

@@ -211,8 +211,8 @@ require_once '/path/to/pili-sdk-php/lib/Pili_v2.php';
     $ak = "7O7hf7Ld1RrC_fpZdFvU8aCgOPuhw2K4eapYOdII";
     $sk = "6Rq7rMSUHHqOgo0DJjh15tHsGUBEH9QhWqqyj4ka";
     $hubName = "PiliSDKTest";
-    $mac = new Vin7ent\Pili\Mac($ak, $sk);
-    $client = new Vin7ent\Pili\Client($mac);
+    $mac = new Qiniu\Pili\Mac($ak, $sk);
+    $client = new Qiniu\Pili\Client($mac);
     $hub = $client->hub($hubName);
 ```
 
@@ -382,8 +382,8 @@ require_once '/path/to/pili-sdk-php/lib/Pili_v2.php';
 ```php
 $ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
 $sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
-$mac = new Vin7ent\Pili\Mac($ak, $sk);
-$client = new Vin7ent\Pili\RoomClient($mac);
+$mac = new Qiniu\Pili\Mac($ak, $sk);
+$client = new Qiniu\Pili\RoomClient($mac);
 $resp=$client->createRoom("901","testroom");
 print_r($resp);
 ```
@@ -393,8 +393,8 @@ print_r($resp);
 ```php
 $ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
 $sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
-$mac = new Vin7ent\Pili\Mac($ak, $sk);
-$client = new Vin7ent\Pili\RoomClient($mac);
+$mac = new Qiniu\Pili\Mac($ak, $sk);
+$client = new Qiniu\Pili\RoomClient($mac);
 $resp=$client->getRoom("testroom");
 print_r($resp);
 ```
@@ -404,8 +404,8 @@ print_r($resp);
 ```php
 $ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
 $sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
-$mac = new Vin7ent\Pili\Mac($ak, $sk);
-$client = new Vin7ent\Pili\RoomClient($mac);
+$mac = new Qiniu\Pili\Mac($ak, $sk);
+$client = new Qiniu\Pili\RoomClient($mac);
 $resp=$client->deleteRoom("testroom");
 print_r($resp);
 ```
@@ -415,8 +415,8 @@ print_r($resp);
 ```php
 $ak = "Tn8WCjE_6SU7q8CO3-BD-yF4R4IZbHBHeL8Q9t";
 $sk = "vLZNvZDojo1F-bYOjOqQ43-NYqlKAej0e9OweInh";
-$mac = new Vin7ent\Pili\Mac($ak, $sk);
-$client = new Vin7ent\Pili\RoomClient($mac);
+$mac = new Qiniu\Pili\Mac($ak, $sk);
+$client = new Qiniu\Pili\RoomClient($mac);
 $resp=$client->roomToken("testroom","123",'admin',1785600000000);
 print_r($resp);
 ```

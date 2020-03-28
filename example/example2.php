@@ -5,8 +5,8 @@ require join(DIRECTORY_SEPARATOR, array(dirname(dirname(__FILE__)), 'lib', 'Pili
 $ak="QzdCUKE0lXmIJsvJ_yQJTeIsJYeK6liEdWAn9JuU";
 $sk="ja76Ne-wCvo-YSc88D3TwKM5O3JtBym5isn-YqjN";
 
-$mac = new Vin7ent\Pili\Mac($ak, $sk);
-$client = new Vin7ent\Pili\RoomClient($mac);
+$mac = new Qiniu\Pili\Mac($ak, $sk);
+$client = new Qiniu\Pili\RoomClient($mac);
 
 try {
     //创建连麦房间
@@ -19,7 +19,7 @@ try {
     $resp=$client->getRoomUserNum("testroom");
     print_r($resp);
     //剔除房间的连麦成员
-    $resp=$client->kickingPlayer("testroom", "Vin7ent-f6e07b78-4dc8-45fb-a701-a9e158abb8e6");
+    $resp=$client->kickingPlayer("testroom", "qiniu-f6e07b78-4dc8-45fb-a701-a9e158abb8e6");
     print_r($resp);
     //鉴权的有效时间: 1个小时.
     $resp = $client->roomToken("testroom", "123", 'admin', (time()+3600));

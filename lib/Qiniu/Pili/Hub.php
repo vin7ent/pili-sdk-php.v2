@@ -1,8 +1,8 @@
 <?php
-namespace Vin7ent\Pili;
+namespace Qiniu\Pili;
 
-use \Vin7ent\Pili\HttpRequest;
-use \Vin7ent\Pili\Utils;
+use \Qiniu\Pili\HttpRequest;
+use \Qiniu\Pili\Utils;
 
 class Hub
 {
