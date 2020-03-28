@@ -186,4 +186,19 @@ class Stream
         $body = json_encode($params);
         return $this->_transport->send(HttpRequest::POST, $url, $body);
     }
+
+    //获取流的播放人数和播放带宽
+    /*
+     * PARAM
+     * @total: array (count, bandwidth)
+     */
+
+    public function stat()
+    {
+        $cfg = Config::getInstance();
+        $protocal = $cfg->USE_HTTPS === true ? "https" : "http";
+        $this->_baseURL = sprintf("%s://%s/%s/hubs/%s/stat/play", $protocal, $cfg->API_HOST, $cfg->API_VERSION, $this->_hub);
+
+        return $this->_transport->send(HttpRequest::GET, $this->_baseURL);
+    }
 }
