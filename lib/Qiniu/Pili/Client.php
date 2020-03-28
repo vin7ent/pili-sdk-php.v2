@@ -1,6 +1,6 @@
 <?php
 
-namespace Qiniu\Pili;
+namespace Vin7ent\Pili;
 
 class Client
 {

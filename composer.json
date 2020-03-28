@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Qiniu": "lib/"
+            "Vin7ent": "lib/"
         }
     },
     "extra": {

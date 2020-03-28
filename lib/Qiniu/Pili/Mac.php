@@ -1,5 +1,5 @@
 <?php
-namespace Qiniu\Pili;
+namespace Vin7ent\Pili;
 
 class Mac
 {
@@ -35,6 +35,6 @@ class Mac
         if (!empty($body)) {
             $data .= $body;
         }
-        return 'Qiniu ' . $this->_accessKey . ':' . Utils::sign($this->_secretKey, $data);
+        return 'Vin7ent ' . $this->_accessKey . ':' . Utils::sign($this->_secretKey, $data);
     }
 }

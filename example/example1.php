@@ -5,8 +5,8 @@ $sk = "0fU92CSrvgNJTVCXqbuRVqkntPFJLFERGa4akpko";
 $hubName = "PiliSDKTest";
 //创建hub
 echo "================Create hub\n";
-$mac = new Qiniu\Pili\Mac($ak, $sk);
-$client = new Qiniu\Pili\Client($mac);
+$mac = new Vin7ent\Pili\Mac($ak, $sk);
+$client = new Vin7ent\Pili\Client($mac);
 $hub = $client->hub($hubName);
 print_r($hub);
 //获取stream
@@ -120,17 +120,17 @@ try {
     echo "Error:", $e->getMessage(), "\n";
 }
 //RTMP 推流地址
-$url = Qiniu\Pili\RTMPPublishURL("publish-rtmp.test.com", $hubName, $streamKey, 3600, $ak, $sk);
+$url = Vin7ent\Pili\RTMPPublishURL("publish-rtmp.test.com", $hubName, $streamKey, 3600, $ak, $sk);
 echo $url, "\n";
 //RTMP 直播放址
-$url = Qiniu\Pili\RTMPPlayURL("live-rtmp.test.com", $hubName, $streamKey);
+$url = Vin7ent\Pili\RTMPPlayURL("live-rtmp.test.com", $hubName, $streamKey);
 echo $url, "\n";
 //HLS 直播地址
-$url = Qiniu\Pili\HLSPlayURL("live-hls.test.com", $hubName, $streamKey);
+$url = Vin7ent\Pili\HLSPlayURL("live-hls.test.com", $hubName, $streamKey);
 echo $url, "\n";
 //HDL 直播地址
-$url = Qiniu\Pili\HDLPlayURL("live-hdl.test.com", $hubName, $streamKey);
+$url = Vin7ent\Pili\HDLPlayURL("live-hdl.test.com", $hubName, $streamKey);
 echo $url, "\n";
 //截图直播地址
-$url = Qiniu\Pili\SnapshotPlayURL("live-snapshot.test.com", $hubName, $streamKey);
+$url = Vin7ent\Pili\SnapshotPlayURL("live-snapshot.test.com", $hubName, $streamKey);
 echo $url, "\n";

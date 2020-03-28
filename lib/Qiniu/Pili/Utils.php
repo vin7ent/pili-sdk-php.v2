@@ -1,5 +1,5 @@
 <?php
-namespace Qiniu\Pili;
+namespace Vin7ent\Pili;
 
 final class Utils
 {
